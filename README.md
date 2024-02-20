@@ -10,9 +10,13 @@ The detectMultiScale method of the classifier takes several parameters:
 
 'col': The grayscale frame to perform face detection on.
 'scaleFactor': The scale factor to use when searching for faces. A higher value means that the classifier will search for faces at larger scales, but may also detect more false positives.
+
 'minNeighbors': The minimum number of neighbors that a candidate rectangle must have to be considered a face. A higher value means that the classifier will be more selective and detect fewer false positives, but may also miss some faces.
+
 'minSize': The minimum size of a face that the classifier should detect.
+
 'flags': Additional flags to control the behavior of the classifier.
+
 The script then draws a rectangle around each detected face using the 'cv2.rectangle' function.
 
 Finally, the script displays the video feed with detected faces using the 'cv2.imshow' function and waits for a key press using the 'cv2.waitKey' function. If the user presses the "a" key, the loop is broken and the script releases the VideoCapture object and exits.
