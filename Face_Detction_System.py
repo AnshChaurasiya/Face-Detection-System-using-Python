@@ -1,5 +1,7 @@
 import cv2
 face_cap = cv2.CascadeClassifier("C:/Users/HP/AppData/Local/Programs/Python/Python310/Lib/site-packages/cv2/data/haarcascade_frontalface_default.xml")
+#" CHANGE THE HAAR CASCADE CLASSIFIER FILE LOCATION ACCORDING TO YOUR SYSTEM"
+
 video_cap = cv2.VideoCapture(0)
 while True:
     ret, video1 = video_cap.read()
